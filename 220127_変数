@@ -1,0 +1,20 @@
+<?php
+// Your code here!
+
+//定数.constみたいなもん。値変わらない。
+define ("AA",1);
+
+//変数の宣言とechoの表示
+$BB=11;
+echo($BB);
+echo $BB;
+$e11=11;
+$あおお=123;
+echo $あおお;
+echo "\n";
+
+//echoの使い方,改行
+echo "Hello\n";
+echo 'Hello';
+echo("Heelo");
+?>
