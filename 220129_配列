@@ -1,0 +1,25 @@
+<?php
+// Your code here!
+//配列
+$banana[]="aaa";
+$banana[]='bbb';
+//変数に配列を入れることもできる。ジャグ配列は楽そう。
+$banana[]=array("ccc","dd");
+//explode関数、区切りを作って配列に納める。
+//',',' '区切りなどができる
+$banana[]=explode(",","ee,f,g,hhh");
+$banana[]=explode(" ","i jj kkkk");
+
+echo($banana[3][3]);
+
+//連想配列
+//each関数はPHP８で使えなくなった。
+$fruit=array("Apple"=>"りんご","Orange"=>"みかん","Grape"=>"ぶどう");
+foreach ($fruit as $key=>$val){
+    echo("インデックスの".$key."は".$val."です");
+}
+
+
+//echo("インデックスの".$banana[0]."は".$banana[1]."です");
+
+?>
