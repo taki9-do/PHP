@@ -1,0 +1,25 @@
+<?php
+// Your code here!
+
+//'' シングルコーテーション
+//"" ダブルコーテーション
+//\ バックスラッシュ
+//t タブ記号
+//n 改行
+//$ ドル記号
+//r キャリッジリターン
+
+$ss="sssss\t";
+$aa='aaaa';
+//以下2つ同じ出力
+echo $ss.$aa;
+echo ("$ss$aa");
+
+//str_replace (検索文字, 置換後の文字列, 元の文字列)
+$beginner="初心者のためのホームページ作り";
+$replase="ホームページ作り";
+$script="おっぱい";
+$word=str_replace("$replase","$script","$beginner");
+echo $word;
+
+?>
