@@ -1,0 +1,43 @@
+<?php
+// Your code here!
+//自作関数。
+//命名規則は変数と同じ（先頭に数字を使えない、小文字と大文字の）
+//値渡し
+function strong($text){
+    return ("<em>$text</em>\n");
+}
+
+//参照渡し
+function ss(&$text){
+    $text=$text."bbb";
+    return ("<em>$text</em>\n");
+}
+
+//デフォルト渡し
+function default2($bb=5){
+    return ($bb+2)*$bb."\n";
+}
+
+$a="aaaaaaa";
+echo(strong($a));
+echo(ss($a));
+echo(default2());
+
+//クラスの宣言
+class Shopping{
+    var $item="ぱそこん";
+    var $price=200000;
+    
+    function getTotal(){
+        $tax=$this->price*0.1;
+        return $this->price+$tax; 
+    }
+}
+
+//オブジェクトの生成と変更
+$result=new Shopping();
+//$item=$result->item;
+$result->price=5;
+echo($result->gettotal());
+
+?>
